@@ -1,0 +1,41 @@
+# Ignore build artifacts
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+*.exe
+*.obj
+*.lib
+*.pdb
+*.dll
+*.exp
+*.log
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore VSCode settings (optional, if you want to keep them local)
+#.vscode/
+*.vcxproj
+*.vcxproj.*
+
+# Ignore model weights and large files (add your model file extensions)
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+
+# Ignore data and logs (customize as needed)
+data/
+logs/
+*.csv
+*.tsv
+*.jsonl
+
+# Git LFS - track large files (uncomment if using LFS)
+# *.pt filter=lfs diff=lfs merge=lfs -text
+# *.h5 filter=lfs diff=lfs merge=lfs -text
