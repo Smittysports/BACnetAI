@@ -1,0 +1,42 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cmake",
+			"label": "CMake: build",
+			"command": "build",
+			"targets": [
+				"all"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "CMake template build task"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: clean",
+			"command": "clean",
+			"problemMatcher": [],
+			"detail": "CMake template clean task"
+		},
+		{
+			"label": "Run Executable After Build",
+			"type": "shell",
+			"command": "./build/BACnetAI",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			},
+			"dependsOn": "CMake: build",
+			"problemMatcher": [],
+			"detail": "Runs the executable after building the project"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: configure",
+			"command": "configure",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
+		}
+	]
+}
