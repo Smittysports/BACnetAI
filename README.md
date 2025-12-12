@@ -1,10 +1,8 @@
-<h1 style="color:lightblue;">JavaSandbox</h1>
+<h1 style="color:lightblue;">Git</h1>
 
 # Prerequisites
 <u>**Windows and Linux**</u>
-1) Install the latest version of WPILib from https://docs.wpilib.org/en/stable/docs/zero-to-robot/step-2/wpilib-setup.html
-- Follow the instruction for downloading, extracting, and installing
-2) Create a GitHub account on https://github.com/
+Create a GitHub account on https://github.com/
 - If you already have one, skip this step
 - This is mandatory for adding code changes to our repositories on GitHub
 - Your ssh public keys will be in your account, these are needed to push your code
@@ -19,7 +17,7 @@
 1) Install git with <br>
    sudo apt install git
 
-# git
+# Usage
 - Type the following from the command line to clone the repository
   ```bash
   git clone git@github.com:FRC-1721/JavaSandbox.git
@@ -115,23 +113,3 @@
   ```bash
   ssh -T git@github.com
   ```
-
-# PS2 Controller
-- Type the following to list the USB devices available
-  ```bash
-  lsusb
-  ```
-  or
-  ```bash
-  ls /dev/input
-  ```
-- Type the following to see what the system is mapping the input to
-  ```bash
-  sudo dmesg | grep -i usb
-  ```
-- Use the following to test the joystick (my input is on js1)
-  ```bash
-  sudo apt install joystick
-  jstest /dev/input/js1
-  ```
-- In the Simulator, make sure to drag the detected  'System joystick' to Joysticks
